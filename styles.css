@@ -1,0 +1,445 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: url('image/backgroud.GIF') repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    font-family: 'MS Sans Serif', 'Arial', sans-serif;
+    /* Add flex layout to stack elements vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: url('image/mouse.png'), auto !important; /* Added !important */
+}
+
+canvas {
+    display: block;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    /* Remove any margins to work with flex layout */
+    margin: 0;
+}
+
+#text-box {
+    position: relative;
+    width: 800px; /* Match canvas width */
+    margin: 0 auto;
+    background: #c0c0c0; /* Classic Windows 95 gray */
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff; /* 3D effect borders */
+    padding: 2px;
+}
+
+/* Windows 95 title bar */
+#text-box::before {
+    content: 'Dopp3lgänger - Visual Novel';
+    display: block;
+    background: #000080; /* Windows 95 title bar blue */
+    color: #fff;
+    padding: 2px 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Inner content area */
+#text-box p {
+    background: #fff;
+    margin: 0;
+    padding: 15px;
+    border: inset 2px #c0c0c0;
+}
+
+#choices {
+    width: 80%;
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.choice-button {
+    background: #c0c0c0;
+    color: #000;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 5px 15px;
+    margin: 5px;
+    font-family: 'MS Sans Serif', 'Arial', sans-serif;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+.choice-button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.choice-button:hover {
+    background: #d4d4d4;
+}
+
+/* Loading screen styles with glitch effect */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/blue.png') repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#loading-screen img {
+    max-width: 800px; /* Adjust size as needed */
+}
+
+#loading-screen p {
+    color: white;
+    margin-top: 100px;
+    font-family: 'The Punk And The Godfather', sans-serif;
+    font-size: 100px;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+        text-shadow: none;
+    }
+    20% {
+        transform: translate(-5px, 5px);
+        text-shadow: 3px 0 #ff0000, -3px 0 #00ff00;
+    }
+    40% {
+        transform: translate(5px, -5px);
+        text-shadow: -3px 0 #ff0000, 3px 0 #00ff00;
+    }
+    60% {
+        transform: translate(-5px, -5px);
+        text-shadow: 3px 0 #0000ff, -3px 0 #ff0000;
+    }
+    80% {
+        transform: translate(5px, 5px);
+        text-shadow: -3px 0 #0000ff, 3px 0 #00ff00;
+    }
+    100% {
+        transform: translate(0);
+        text-shadow: none;
+    }
+}
+
+/* Game start screen with multiple scan lines */
+#game-start {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    overflow: hidden;
+}
+
+/* Red scan lines */
+#game-start::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        transparent 0%,
+        transparent 50%,
+        rgba(255, 0, 0, 0.4) 50%,
+        transparent 51%,
+        transparent 100%
+    );
+    background-size: 100% 2px;
+    animation: scanlines 4s linear infinite;
+    pointer-events: none;
+}
+
+/* Green scan lines */
+#game-start::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        transparent 0%,
+        transparent 50%,
+        rgba(0, 255, 0, 0.4) 50%,
+        transparent 51%,
+        transparent 100%
+    );
+    background-size: 100% 1.5px;
+    animation: scanlines 6s linear infinite;
+    pointer-events: none;
+}
+
+/* Blue scan lines */
+.blue-scanline {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        transparent 0%,
+        transparent 50%,
+        rgba(0, 0, 255, 0.4) 50%,
+        transparent 51%,
+        transparent 100%
+    );
+    background-size: 100% 2.5px;
+    animation: scanlines 5s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes scanlines {
+    0% { 
+        transform: translateY(-100%);
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% { 
+        transform: translateY(100%);
+        opacity: 0.5;
+    }
+}
+
+/* Add glitch effect to the background image */
+.full-screen-bg {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* 改为 contain 以保持图片比例 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: glitch-image 5s infinite;
+}
+
+@keyframes glitch-image {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: none;
+    }
+    92% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: none;
+    }
+    93% {
+        transform: translate(-50%, -50%) scale(1.01);
+        filter: hue-rotate(90deg);
+    }
+    94% {
+        transform: translate(-50%, -50%) scale(0.99);
+        filter: hue-rotate(-90deg);
+    }
+    95% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: none;
+    }
+    98% {
+        transform: translate(-50%, -50%) scale(1.01);
+        filter: hue-rotate(90deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: none;
+    }
+}
+
+.button-container {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(calc(-50% + 500px));
+    z-index: 1;
+}
+
+.start-button {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 15px 30px;
+    font-family: 'Aristotle Punk', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    width: 200px;
+}
+
+.about-button {
+    position: fixed;
+    bottom: 0; /* Move to the bottom of the page */
+    right: 1130px; /* Move to the right of the page */
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 15px 30px;
+    font-family: 'Aristotle Punk', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    width: 160px; /* Slightly smaller width */
+    z-index: 1000; /* Increase z-index to ensure it's above other elements */
+}
+
+.start-button:hover, .about-button:hover {
+    border-color: #808080 #ffffff #ffffff #808080;
+    background: #0400ff; /* Dark blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+.start-button:active, .about-button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+    background: #0400ff; /* Keep same color when clicked */
+    color: #ffffff;
+}
+
+/* Add styles for progress bar */
+.progress-bar {
+    position: absolute;
+    right: 0;  /* Align to right edge */
+    top: 0;    /* Align to top */
+    height: 100vh; /* Full viewport height */
+    width: auto;   /* Maintain aspect ratio */
+    max-height: none; /* Remove max-height limitation */
+    transform: none;  /* Remove transform */
+}
+
+/* Apply custom cursor universally */
+*, 
+*::before, 
+*::after {
+    cursor: url('image/mouse.png'), auto !important;
+}
+
+/* Apply custom cursor to all important elements */
+body,
+#game-content,
+#text-box,
+#choices,
+.choice-button,
+canvas,
+#game-start,
+#loading-screen,
+.button-container,
+.full-screen-bg {
+    cursor: url('image/mouse.png'), auto !important;
+}
+
+/* Specific hover states */
+.choice-button:hover,
+button:hover,
+canvas:hover,
+.start-button:hover,
+.about-button:hover {
+    cursor: url('image/mouse.png'), pointer !important;
+}
+
+/* Keep existing cursor trail styles */
+.cursor-trail {
+    width: 47px;
+    height: 67px;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    background: url('image/cursor.gif') no-repeat;
+    background-size: contain;
+    opacity: 0.7;
+    transition: opacity 0.3s, filter 0.1s;
+}
+
+/* Apply custom cursor to game background */
+#game-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#game-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: url('image/mouse.png'), auto !important;
+}
+
+/* Music control button styles */
+.music-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    gap: 5px;               
+    z-index: 1000;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.music-button:hover,
+.music-button.playing {
+    filter: grayscale(0%);
+}
+
+.music-icon {
+    width: auto;      
+    height: auto;      
+    max-width: none;   
+    max-height: none;  
+}
+
+.music-text {
+    font-family: 'The Punk And The Godfather', sans-serif;
+    color: white;
+    font-size: 40px;  /* Increased font size */
+    margin-top: 5px;
+    text-shadow: 
+        2px 2px 0 #ff0000,
+        -2px -2px 0 #ff0000,
+        2px -2px 0 #ff0000,
+        -2px 2px 0 #ff0000,
+        0 0 10px rgba(255, 0, 0, 0.7),
+        0 0 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #ff0000, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Ensure the button keeps custom cursor */
+.music-button {
+    cursor: url('image/mouse.png'), pointer !important;
+}
+  

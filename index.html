@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta element for responsiveness -->
+  <title>Dopp3lgänger</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.cdnfonts.com/css/the-punk-and-the-godfather" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/aristotle-punk" rel="stylesheet">
+</head>
+<body>
+  <!-- Cursor trail element -->
+  <div class="cursor-trail"></div>
+  
+  <!-- Loading screen -->
+  <div id="loading-screen">
+    <img src="image/loading.GIF" alt="Loading...">
+    <img src="image/bar.gif" alt="Progress" class="progress-bar">
+    <p>Click anywhere to skip</p>
+  </div>
+  <!-- Game start screen -->
+  <div id="game-start" style="display: none;">
+    <img src="image/game.PNG" alt="Game Start" class="full-screen-bg">
+    <div class="button-container">
+        <button id="start-button" class="start-button">Start Game</button>
+        <a href="http://igor.gold.ac.uk/~kwang013/my-portfolio/portfolio_web/index.html" 
+           target="_blank" 
+           class="about-button">About Me</a>
+    </div>
+  </div>
+  <!-- Game content -->
+  <div id="game-content" style="display: none;">
+    <button id="music-control" class="music-button">
+        <img src="image/music.gif" alt="Music Control" class="music-icon">
+        <span class="music-text">MUSIC OFF</span>
+    </button>
+    <div id="text-box"></div>
+    <div id="choices"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
