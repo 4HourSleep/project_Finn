@@ -2,42 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta element for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on all devices -->
   <title>Dopp3lgänger</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.cdnfonts.com/css/the-punk-and-the-godfather" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the main stylesheet -->
+  <link href="https://fonts.cdnfonts.com/css/the-punk-and-the-godfather" rel="stylesheet"> <!-- Custom font for styling -->
   <link href="https://fonts.cdnfonts.com/css/aristotle-punk" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/times-for-punks" rel="stylesheet"> <!-- Another custom font for styling -->
 </head>
 <body>
-  <!-- Cursor trail element -->
+  <!-- Element for cursor trail effect -->
   <div class="cursor-trail"></div>
   
-  <!-- Loading screen -->
+  <!-- Loading screen displayed initially -->
   <div id="loading-screen">
-    <img src="image/loading.GIF" alt="Loading...">
-    <img src="image/bar.gif" alt="Progress" class="progress-bar">
-    <p>Click anywhere to skip</p>
+    <img src="image/loading.GIF" alt="Loading..."> <!-- Loading animation -->
+    <img src="image/bar.gif" alt="Progress" class="progress-bar"> <!-- Progress bar animation -->
+    <p>Click anywhere to skip</p> <!-- Instruction to skip the loading screen -->
   </div>
-  <!-- Game start screen -->
+  
+  <!-- Game start screen, hidden initially -->
   <div id="game-start" style="display: none;">
-    <img src="image/game.PNG" alt="Game Start" class="full-screen-bg">
+    <img src="image/game.PNG" alt="Game Start" class="full-screen-bg"> <!-- Background image for the start screen -->
     <div class="button-container">
-        <button id="start-button" class="start-button">Start Game</button>
+        <button id="start-button" class="start-button">Start Game</button> <!-- Button to start the game -->
         <a href="http://igor.gold.ac.uk/~kwang013/my-portfolio/portfolio_web/index.html" 
            target="_blank" 
-           class="about-button">About Me</a>
+           class="about-button">About Me</a> <!-- Link to the portfolio page -->
     </div>
   </div>
-  <!-- Game content -->
+  
+  <!-- Add this after game-start and before game-content -->
+  <div id="quote-screen" style="display: none;">
+    <img src="image/word.GIF" alt="Background" class="quote-bg">
+    <div class="quote-container">
+        <span id="quote-text"></span><span class="cursor">|</span>
+    </div>
+  </div>
+  
+  <!-- Main game content, hidden initially -->
   <div id="game-content" style="display: none;">
     <button id="music-control" class="music-button">
-        <img src="image/music.gif" alt="Music Control" class="music-icon">
-        <span class="music-text">MUSIC OFF</span>
+        <img src="image/music.gif" alt="Music Control" class="music-icon"> <!-- Icon for music control -->
+        <span class="music-text">MUSIC OFF</span> <!-- Text indicating music status -->
     </button>
-    <div id="text-box"></div>
-    <div id="choices"></div>
+    <div id="text-box"></div> <!-- Container for game text -->
+    <div id="scene-image"></div>
+    <div id="choices"></div> <!-- Container for game choices -->
+    <div id="true-ending-button" style="display: none;"></div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-  <script src="script.js"></script>
+  
+  <!-- External JavaScript libraries and scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> <!-- p5.js library for creative coding -->
+  <script src="script.js"></script> <!-- Main JavaScript file for game logic -->
 </body>
 </html>
