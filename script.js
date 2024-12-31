@@ -547,7 +547,25 @@ function showFullscreenImage(imagePath, isEnding = false, endingText = '') {
         align-items: center;
     `;
 
+    const img = document.createElement('img');
+    img.src = imagePath;
+    img.style.cssText = `
+        max-width: 100%;
+        max-height: ${isEnding ? '80%' : '100%'};
+        object-fit: contain;
+        margin-top: ${isEnding ? '20px' : '0'};
+    `;
 
+    // Start the appropriate animation based on the ending
+    if (imagePath.includes('HE.PNG')) {
+        startAnimation('good');
+    } else if (imagePath.includes('BE.PNG')) {
+        startAnimation('bad');
+    } else if (imagePath.includes('TE.PNG')) {
+        startAnimation('true');
+    }
+
+    // Add text container if it's an ending
     if (isEnding) {
         const textDiv = document.createElement('div');
         textDiv.style.cssText = `
@@ -561,10 +579,11 @@ function showFullscreenImage(imagePath, isEnding = false, endingText = '') {
             white-space: pre-line;
             opacity: 0;
             transition: opacity 0.5s;
+            z-index: 1001;
         `;
         fullscreenDiv.appendChild(textDiv);
 
-  
+        // Typewriter effect
         let index = 0;
         function typeText() {
             if (index < endingText.length) {
@@ -574,26 +593,18 @@ function showFullscreenImage(imagePath, isEnding = false, endingText = '') {
             }
         }
         
-
         setTimeout(() => {
             textDiv.style.opacity = '1';
             typeText();
         }, 500);
     }
 
-    const img = document.createElement('img');
-    img.src = imagePath;
-    img.style.cssText = `
-        max-width: 100%;
-        max-height: ${isEnding ? '80%' : '100%'};
-        object-fit: contain;
-        margin-top: ${isEnding ? '20px' : '0'};
-    `;
-
     fullscreenDiv.appendChild(img);
     document.body.appendChild(fullscreenDiv);
 
+    // Stop animation and remove fullscreen when clicked
     fullscreenDiv.onclick = () => {
+        stopAnimation();
         document.body.removeChild(fullscreenDiv);
         updateScene();
     };
