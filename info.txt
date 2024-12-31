@@ -1,7 +1,11 @@
 Name: Keyi Wang（Finn)
 
 Description:
-This project is a browser-based visual novel game titled "Klesinister Y: Visual Novel." The game follows the character Klesinister Y, a being with a complex background and personality, as they navigate through a virtual mental asylum. Players make choices that influence the narrative's direction, leading to multiple endings. The game is developed using p5.js, HTML, CSS, and JavaScript, providing an interactive storytelling experience.
+"Dopp3lgänger" is a unique browser-based visual novel game centered around the story of the protagonist, Klesinister Y. This original character is a complex and mysterious being with a rich background and multi-layered personality. The story takes place in a virtual mental asylum, where players, through observing and making choices for Klesinister Y, explore their inner world and the secrets of their past.
+The game is designed around player choices, where each decision significantly influences the narrative, leading to various possible endings. This interactivity not only enhances the sense of immersion but also allows players to shape the story's direction through their actions.
+"Klesinister Y: Visual Novel" is developed entirely using web technologies, including p5.js, HTML, CSS, and JavaScript. This combination of tools ensures cross-platform compatibility, allowing the game to run smoothly on most modern browsers, while also providing the developers with greater creative freedom. p5.js powers the rich graphical elements of the game, HTML and CSS provide the structure and design of the interface, and JavaScript handles the interactive logic and dynamic behavior.
+The game's visual and narrative style is distinct and innovative. The design of the virtual mental asylum draws heavy influence from retro internet art and postmodern aesthetics, using abstract and symbolic scenes to evoke intense emotional atmospheres. Every scene is carefully crafted, from the cold, clinical nature of the asylum to the complex depths of the protagonist's psychological world, providing players with an immersive sensory experience.
+Additionally, the game incorporates many personalized elements, such as the protagonist's signature blue and red color scheme and virtual punk style, presenting a vivid and tense virtual world. Through these visual and narrative details, "Klesinister Y: Visual Novel" is not just a game, but a work of art, allowing players to experience profound emotional resonance and intellectual stimulation while enjoying the gameplay.
 
 How to Use the Program:
 - Launch the game in a web browser.
@@ -13,15 +17,74 @@ How to Use the Program:
 Video Demo:
 https://goldsmithscollege-my.sharepoint.com/:v:/g/personal/kwang013_campus_goldsmiths_ac_uk/EZBcOLonMjBCrCQg1y41avABDaQDJPDSjtU5AaLmVroAew?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wyMwst
 
-References:
-https://ja.wikipedia.org/wiki/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%92%E6%95%99%E3%81%88%E3%81%A6_%E3%80%9Ccomment_te_dire_adieu%E3%80%9C
-https://en.wikipedia.org/wiki/Saya_no_Uta:_The_Song_of_Saya
-https://en.wikipedia.org/wiki/Slay_the_Princess
-https://whoslila.fandom.com/wiki/Lila
-https://en.wikipedia.org/wiki/World_of_Horror
-https://www.shidianguji.com/zh/book/DZ1060/chapter/DZ1060_100
-https://www.cdnfonts.com/
-https://en.picmix.com/stamp
-https://www.11zon.com/
-Compress Animated GIFs - docsmall
-M4A to OGG Converter - FreeConvert.com
+Links to Deliverables:
+Publish WEB:http://igor.gold.ac.uk/~kwang013/project_Finn/index.html
+Github WEB:https://github.com/4HourSleep/project_Finn
+One Drive:
+
+
+
+Below is an updated list of references that has been updated to include your newly provided links:
+
+1. **Bridges in Earthquakes**  
+   Link: [https://www.shidianguji.com/zh/book/DZ1060/chapter/DZ1060_100](https://www.shidianguji.com/zh/book/DZ1060/chapter/DZ1060_100)  
+   *Note: This link points to a specific chapter of the book Bridges in Earthquakes, which was the inspiration for my game*.
+
+2. **Free Fonts Downloading Site**  
+   Link: [https://www.cdnfonts.com/](https://www.cdnfonts.com/)  
+   *Note: This site offers downloads of various free fonts for different design projects, in which I used two punk fonts applied to the page. *
+
+3. **PicMix Stamp Resource** **PicMix Stamp Resource** **PicMix Stamp Resource  
+   Link: [https://en.picmix.com/stamp](https://en.picmix.com/stamp)  
+   *Note: PicMix offers a wide range of stamps and stickers for image editing and creative projects, I used gifs and pngs in it as mouse and button designs for the page. *
+
+4. **11zon Online File Conversion Tool**  
+   Link: [https://www.11zon.com/](https://www.11zon.com/)  
+   *Note: 11zon provides a variety of online tools for file format conversion and editing, this one made it easy for me to convert the background format I wanted. *
+
+5. **Docsmall Dynamic GIF Compression Tool** **Docsmall Dynamic GIF Compression Tool** **Docsmall Dynamic GIF Compression Tool  
+   Link: [https://docsmall.com/compress-animated-gif](https://docsmall.com/compress-animated-gif)  
+   *Note: Docsmall provides online GIF motion picture compression service to help reduce file size. **Docsmall
+
+6. **M4A to OGG Converter from FreeConvert.com** **M4A to OGG Converter from FreeConvert.com  
+   Link: [https://www.freeconvert.com/m4a-to-ogg](https://www.freeconvert.com/m4a-to-ogg)  
+   *Note: This tool can convert M4A audio files to OGG format, support multiple audio format conversion, so that my game background music can be played faster. *
+
+7. **Japanese Wikipedia: さよならを教えて 〜comment te dire adieu ~**  
+   Link: [https://ja.wikipedia.org/wiki/さよならを教えて_~comment_te_dire_adieu〜](https://ja.wikipedia.org/wiki/さよならを教えて_~comment_te_dire_adieu〜 )  
+   *Note: This page introduces information about the Japanese visual novel “さよならを教えて 〜comment te dire adieu〜”, the game from which I drew inspiration for the scene switching and design, as well as my characters. *
+
+8. **English Wikipedia:Saya no Uta: The Song of Saya**  
+   Link: [https://en.wikipedia.org/wiki/Saya_no_Uta:_The_Song_of_Saya](https://en.wikipedia.org/wiki/Saya_no_Uta:_The_Song_of_Saya)  
+   *Note: This page gives detailed information about the visual novel The Song of Saya, and my unstable use of text and spirituality references this game. *
+
+9. **English Wikipedia:Slay the Princess**  
+   Link: [https://en.wikipedia.org/wiki/Slay_the_Princess](https://en.wikipedia.org/wiki/Slay_the_Princess)  
+   *Note: This page provides information about the game Slay the Princess, which I referenced for button settings and text for the visual novel. *
+
+10. **Who's Lila? Wikipedia:Lila**  
+    Link: [https://whoslila.fandom.com/wiki/Lila](https://whoslila.fandom.com/wiki/Lila)  
+    *Note: This page is about the character Lila from the game Who's Lila? I referenced this game for the page's color, tarot card design. *
+
+11. **English Wikipedia:World of Horror** **English Wikipedia: World of Horror  
+    Link: [https://en.wikipedia.org/wiki/World_of_Horror](https://en.wikipedia.org/wiki/World_of_Horror)  
+    *Note: This page describes information about the game World of Horror, and I referenced this for the game's screens and distractions, and the Cthulhu mythos setting. *
+
+12.**Hardcore Show Flyers**  
+    Link: [https://hardcoreshowflyers.net/](https://hardcoreshowflyers.net/)  
+    *Note: This site collects and displays flyers and posters related to hardcore music shows covering multiple eras and regions of hardcore music culture, my inspiration for the captivity poster on the game's start page. *
+
+13. **Timéo Langlois's solo portfolio site**  
+    Link: [https://timeolanglois.com/](https://timeolanglois.com/)  
+    
+
+*Note: This site shows the design work of Timéo Langlois, including reference examples of button design, I refer to its retro style buttons to make my webpage more windows95 style. *
+
+    
+Link: [https://www.cameronsworld.net/](https://www.cameronsworld.net/)  
+    *Note: Cameron's World is a website that recreates the style of GeoCities pages from 1994 to 2009 through collage, reflecting the retro aesthetic of the early days of the Internet, and I use a lot of web design e.... **VN 
+
+15. **VN (Visual Novel) Engines and Tools Collection**  
+    Link: [https://cowlevel.net/article/1849209](https://cowlevel.net/article/1849209)  
+    *Note: The article, written by alpacanist, rounds up a variety of engines and tools for making visual novels, including Ren'py, Ink, Fungus, and others for developers, and I have code referenced here for JavaScript scene-switching simulations and various plot-driven ending unlocks. * 
+ 
