@@ -1,0 +1,27 @@
+Name: Keyi Wang（Finn)
+
+Description:
+This project is a browser-based visual novel game titled "Klesinister Y: Visual Novel." The game follows the character Klesinister Y, a being with a complex background and personality, as they navigate through a virtual mental asylum. Players make choices that influence the narrative's direction, leading to multiple endings. The game is developed using p5.js, HTML, CSS, and JavaScript, providing an interactive storytelling experience.
+
+How to Use the Program:
+- Launch the game in a web browser.
+- Read the narrative displayed on the screen.
+- When presented with choices, click on the buttons to select an option.
+- Your choices will affect the progression and outcome of the story.
+- Continue making choices to explore different narrative paths and endings.
+
+Video Demo:
+https://goldsmithscollege-my.sharepoint.com/:v:/g/personal/kwang013_campus_goldsmiths_ac_uk/EZBcOLonMjBCrCQg1y41avABDaQDJPDSjtU5AaLmVroAew?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wyMwst
+
+References:
+https://ja.wikipedia.org/wiki/%E3%81%95%E3%82%88%E3%81%AA%E3%82%89%E3%82%92%E6%95%99%E3%81%88%E3%81%A6_%E3%80%9Ccomment_te_dire_adieu%E3%80%9C
+https://en.wikipedia.org/wiki/Saya_no_Uta:_The_Song_of_Saya
+https://en.wikipedia.org/wiki/Slay_the_Princess
+https://whoslila.fandom.com/wiki/Lila
+https://en.wikipedia.org/wiki/World_of_Horror
+https://www.shidianguji.com/zh/book/DZ1060/chapter/DZ1060_100
+https://www.cdnfonts.com/
+https://en.picmix.com/stamp
+https://www.11zon.com/
+Compress Animated GIFs - docsmall
+M4A to OGG Converter - FreeConvert.com
